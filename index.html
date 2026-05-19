@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Mendonça — XP Investimentos</title>
+  <title>Luis Monteiro — XP Investimentos</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <style>
@@ -1014,12 +1014,12 @@
     const vcf = [
       'BEGIN:VCARD',
       'VERSION:3.0',
-      'FN:Rafael Mendonça',
+      'FN:Luis Monteiro',
       'ORG:XP Investimentos',
       'TITLE:Assessor de Investimentos',
       'TEL;TYPE=CELL:+5511999990000',
-      'EMAIL:rafael.mendonca@xpi.com.br',
-      'URL:https://linkedin.com/in/rafaelmendonca',
+      'EMAIL:luis.monteiro@xpi.com.br',
+      'URL:https://linkedin.com/in/luismonteiro',
       'ADR;TYPE=WORK:;;Vila Olímpia;São Paulo;SP;;Brasil',
       'END:VCARD'
     ].join('\n');
@@ -1027,7 +1027,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'rafael-mendonca-xp.vcf';
+    a.download = 'luis-monteiro-xp.vcf';
     a.click();
     URL.revokeObjectURL(url);
     showToast('Contato salvo!');
@@ -1037,7 +1037,7 @@
   document.getElementById('shareBtn').addEventListener('click', function() {
     if (navigator.share) {
       navigator.share({
-        title: 'Rafael Mendonça — XP Investimentos',
+        title: 'Luis Monteiro — XP Investimentos',
         text: 'Assessor de Investimentos · +55 (11) 99999-0000',
         url: window.location.href
       });
